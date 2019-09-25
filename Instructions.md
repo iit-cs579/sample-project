@@ -4,7 +4,7 @@ You should have been assigned a project repository for your work. In the example
 
 Your repository has been setup with a lot of starter code so you can get started more easily. To use it, do the following:
 
-1. Make sure you've completed all the course [[Prerequisites.md]]
+1. Make sure you've completed all the course [Prerequisites.md](Prerequisites.md)
 2. Clone your repo:  `git clone https://github.com/iit-cs579/sample-project`
 3. Start a [virtual environment](https://virtualenv.pypa.io/en/stable/).
   - First, make sure you have virtual env installed. `pip install virtualenv`
