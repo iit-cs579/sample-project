@@ -4,14 +4,13 @@ You should have been assigned a project repository for your work. In the example
 
 Your repository has been setup with a lot of starter code so you can get started more easily. To use it, follow the instructions below. We'll assume your project name is 'project1'.
 
-1. Make sure you've completed all the course [[Prerequisites.md]]
-2. Clone your repo:  `git clone https://github.com/iit-cs579/project1`
-3. Start a [virtual environment](https://virtualenv.pypa.io/en/stable/).
+1. Clone your repo:  `git clone https://github.com/iit-cs579/project1`
+2. Start a [virtual environment](https://virtualenv.pypa.io/en/stable/).
   - First, make sure you have virtual env installed. `pip install virtualenv`
   - Next, outside of the team repository, create a new virtual environment folder by `virtualenv osna-virtual`. 
   - Activate your virtual environment by `source osna-virtual/bin/activate`
   - Now, when you install python software, it will be saved in your `osna-virtual` folder, so it won't conflict with the rest of your system.
-4. Install your project code by
+3. Install your project code by
 ```
 cd project1   # enter your project repository folder
 python setup.py develop # install the code. 
@@ -24,7 +23,7 @@ This may take a while, as all dependencies listed in the `requirements.txt` file
 - instead of `virtualenv osna-virtual` above, do `mkvirtualenv osna-virtual`
 - other students have also had luck starting environments with the command `py -3 -m venv env env\scripts\activate`
 
-5. If everything worked properly, you should now be able to run your project's command-line tool by typing:  
+4. If everything worked properly, you should now be able to run your project's command-line tool by typing:  
 ```
 osna --help
 ```
@@ -48,13 +47,8 @@ Commands:
 
 As part of your project, you'll implement each of the above 6 commands. How you do so will in large part be up to you.
 
-### Setting up Twitter tokens
-In order to use the Twitter API, you will need to create an app on their site, then generate security tokens which are required to communicate with the API.
-
-1. Create an account on [twitter.com](http://twitter.com).
-2. Generate authentication tokens by following the instructions [here](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html).
-3. Add your tokens to the [credentials.json](https://raw.githubusercontent.com/tapilab/elevate-osna-starter/master/credentials.json) file. (API Key == Consumer Key)
-4. Copy `credentials.json` to your home directory `~/.osna/credentials.json` (on windows, this is `C:\Users\<username>`.)
+### Configuration
+The app will stores configuration files in  `~/.osna/` (on windows, this is `C:\Users\<username>`.) See `__init__.py` for an example of how you can add variables to this file and read them for use in your app.
 
 
 ### Flask Web UI
