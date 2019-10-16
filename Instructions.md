@@ -2,10 +2,10 @@
 
 You should have been assigned a project repository for your work. In the examples below, we'll assume the repository is called <https://github.com/iit-cs579/sample-project>. This is where all your code will live. 
 
-Your repository has been setup with a lot of starter code so you can get started more easily. To use it, do the following:
+Your repository has been setup with a lot of starter code so you can get started more easily. To use it, follow the instructions below. We'll assume your project name is 'project1'.
 
 1. Make sure you've completed all the course [[Prerequisites.md]]
-2. Clone your repo:  `git clone https://github.com/iit-cs579/sample-project`
+2. Clone your repo:  `git clone https://github.com/iit-cs579/project1`
 3. Start a [virtual environment](https://virtualenv.pypa.io/en/stable/).
   - First, make sure you have virtual env installed. `pip install virtualenv`
   - Next, outside of the team repository, create a new virtual environment folder by `virtualenv osna-virtual`. 
@@ -13,7 +13,7 @@ Your repository has been setup with a lot of starter code so you can get started
   - Now, when you install python software, it will be saved in your `osna-virtual` folder, so it won't conflict with the rest of your system.
 4. Install your project code by
 ```
-cd sample-project   # enter your project repository folder
+cd project1   # enter your project repository folder
 python setup.py develop # install the code. 
 ```
 
@@ -42,8 +42,8 @@ Commands:
   evaluate  Report accuracy and other metrics of your approach.
   network   Perform the network analysis component of your project.
   stats     Read all data and print statistics.
-  train     Train a classifier and save it for later use in the web
-  web       Launch a web app.
+  train     Train a classifier on all of your labeled data and save it for...
+  web       Launch a web app for your project demo.
 ```
 
 As part of your project, you'll implement each of the above 6 commands. How you do so will in large part be up to you.
@@ -77,4 +77,13 @@ which should produce output like:
 If you open your web browser and go to `http://0.0.0.0:9999/` you should see something like:
 
 ![img/web.png](img/web.png)
+
+
+### Tutorials
+
+Here are a few tutorials that will help you with the project:
+
+1. Complete the scikit-learn tutorial from <https://www.datacamp.com/community/tutorials/machine-learning-python> (2 hours)
+2. Understand how python packages work by going through the [Python Packaging User Guide](https://packaging.python.org/tutorials/) (you can skip the "Creating Documentation" section). (1 hour)
+3. Complete Part 1 of the [Flask tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world), which is the library we will use for making a web demo for your project.
 
