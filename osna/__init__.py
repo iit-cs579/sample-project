@@ -32,7 +32,7 @@ except:
 
 # main config file.
 config_path = osna_path + 'osna.cfg'
-# twitter credentials.
+# twitter or other credentials needed.
 credentials_path = osna_path + 'credentials.json'
 # classifier
 clf_path = osna_path + 'clf.pkl'
